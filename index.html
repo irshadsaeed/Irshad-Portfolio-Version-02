@@ -1,799 +1,1279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Irshad Ullah — Full Stack Developer with 5+ years crafting exceptional digital experiences using Laravel, React, and modern web technologies.">
-  <title>Irshad Ullah — Full Stack Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/portfolio.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Irshad Ullah — Full Stack Developer with 5+ years crafting exceptional digital experiences using Laravel, React, and modern web technologies."
+    />
+    <title>Irshad Ullah — Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/portfolio.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-outer" id="cursorOuter"></div>
+    <div class="cursor-inner" id="cursorInner"></div>
 
-<!-- Custom Cursor -->
-<div class="cursor-outer" id="cursorOuter"></div>
-<div class="cursor-inner" id="cursorInner"></div>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+      <div class="loader-inner">
+        <div class="loader-logo">Irshad<span>.</span></div>
+        <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+        <div class="loader-dots"><span></span><span></span><span></span></div>
+      </div>
+    </div>
 
-<!-- Page Loader -->
-<div class="page-loader" id="pageLoader">
-  <div class="loader-inner">
-    <div class="loader-logo">Irshad<span>.</span></div>
-    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
-    <div class="loader-dots"><span></span><span></span><span></span></div>
-  </div>
-</div>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+      <div class="bg-grid"></div>
+      <div class="bg-noise"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
 
-<!-- Animated Background -->
-<div class="bg-animation">
-  <div class="bg-grid"></div>
-  <div class="bg-noise"></div>
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
-</div>
-
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-  <div class="nav-container">
-    <a href="#home" class="logo">
-      <div class="logo-mark"><i class="bi bi-code-slash"></i></div>
-      Irshad
-    </a>
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu"><i class="bi bi-list"></i></button>
-    <div class="nav-menu" id="navMenu">
-      <ul class="nav-links">
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <i class="bi bi-sun-fill sun"></i>
-          <i class="bi bi-moon-fill moon"></i>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">
+          <div class="logo-mark"><i class="bi bi-code-slash"></i></div>
+          Irshad
+        </a>
+        <button
+          class="mobile-toggle"
+          id="mobileToggle"
+          aria-label="Toggle menu"
+        >
+          <i class="bi bi-list"></i>
         </button>
-        <a href="#contact" class="btn-nav">Hire Me</a>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-shapes">
-    <div class="h-ring hr-1"></div>
-    <div class="h-ring hr-2"></div>
-    <div class="h-ring hr-3"></div>
-    <span class="h-plus hp-1">+</span>
-    <span class="h-plus hp-2">+</span>
-    <span class="h-plus hp-3">+</span>
-  </div>
-  <div class="hero-container">
-    <div class="hero-content">
-      <div class="hero-avail">
-        <span class="avail-dot"></span>
-        <span class="avail-txt">Available for Work</span>
-      </div>
-      <span class="hero-greeting">Hello, I'm</span>
-      <h1 class="hero-name">
-        Irshad<br>
-        <span class="hl">Ullah</span>
-      </h1>
-      <div class="hero-role">
-        <span class="typed-text" id="typedText">Full Stack Developer</span><span class="cursor-type">|</span>
-      </div>
-      <p class="hero-desc">
-        5+ years crafting exceptional digital experiences. Specialized in Laravel, React, and modern web technologies — turning complex ideas into powerful, scalable solutions.
-      </p>
-      <div class="hero-btns">
-        <a href="#contact" class="btn btn-primary"><i class="bi bi-send-fill"></i> Let's Talk</a>
-        <a href="#projects" class="btn btn-secondary"><i class="bi bi-collection-fill"></i> View Work</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <div class="stat-val"><span data-count="50">0</span><em>+</em></div>
-          <div class="stat-label">Projects</div>
-        </div>
-        <div class="stat">
-          <div class="stat-val"><span data-count="5">0</span><em>+</em></div>
-          <div class="stat-label">Years Exp</div>
-        </div>
-        <div class="stat">
-          <div class="stat-val"><span data-count="30">0</span><em>+</em></div>
-          <div class="stat-label">Clients</div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="hero-photo-wrap">
-        <div class="photo-glow"></div>
-        <div class="photo-ring"></div>
-        <div class="hero-photo-frame">
-          <img src="images/image.png" alt="Irshad Ullah" loading="eager">
-        </div>
-      </div>
-      <div class="info-card ic-stack">
-        <div class="ic-icon"><i class="bi bi-code-slash"></i></div>
-        <div class="ic-text"><strong>Full Stack</strong><span>Developer</span></div>
-      </div>
-      <div class="info-card ic-exp">
-        <div class="ic-icon"><i class="bi bi-trophy-fill"></i></div>
-        <div class="ic-text"><strong>5+ Years</strong><span>Experience</span></div>
-      </div>
-      <div class="info-card ic-loc">
-        <div class="ic-icon"><i class="bi bi-geo-alt-fill"></i></div>
-        <div class="ic-text"><strong>Riyadh</strong><span>Saudi Arabia</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TECH STRIP -->
-<div class="tech-strip">
-  <div class="marquee-track">
-    <span class="marquee-item"><i class="bi bi-dot"></i>Laravel</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>React JS</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>Next.js</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>PHP</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>Node.js</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>MySQL</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>Tailwind CSS</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>Docker</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>Prestashop</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>Symfony</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>MongoDB</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>Redis</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>AWS</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>PostgreSQL</span>
-    <!-- duplicate for seamless loop -->
-    <span class="marquee-item"><i class="bi bi-dot"></i>Laravel</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>React JS</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>Next.js</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>PHP</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>Node.js</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>MySQL</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>Tailwind CSS</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>Docker</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>Prestashop</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>Symfony</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>MongoDB</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>Redis</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>AWS</span>
-    <span class="marquee-item"><i class="bi bi-dot"></i>PostgreSQL</span>
-  </div>
-</div>
-
-<!-- ABOUT -->
-<section class="section about-section" id="about">
-  <div class="container">
-    <div class="about-wrap">
-      <div class="about-img-side reveal-l">
-        <div class="about-decor"><i class="bi bi-braces"></i></div>
-        <div class="about-img-main">
-          <img src="images/irshad.jpeg" alt="Irshad Ullah" loading="lazy">
-        </div>
-        <div class="exp-badge">
-          <span class="big">5+</span>
-          <span class="sm">Years of<br>Experience</span>
-        </div>
-      </div>
-      <div class="about-text reveal-r">
-        <div class="section-eyebrow"><i class="bi bi-person-fill"></i> About Me</div>
-        <h2 class="section-title">Passionate Developer Creating <em>Digital Excellence</em></h2>
-        <p>I'm a Full Stack Developer with 5+ years of experience, having started my career at Adbook Digital Solutions and later spending 3 years at EBRIDGE Technology as a Backend Developer, Laravel/Frontend Developer, and Customer Support Engineer.</p>
-        <p>I'm currently working at 76 Rental Cars Gharnatia, building a modern car selling and marketplace platform, after delivering 50+ client projects and developing live digital products with a strong focus on performance and business-driven results.</p>
-        <div class="about-meta">
-          <div class="meta-item">
-            <i class="bi bi-person-fill"></i>
-            <div><div class="mi-label">Name</div><div class="mi-val">Irshad Ullah</div></div>
-          </div>
-          <div class="meta-item">
-            <i class="bi bi-envelope-fill"></i>
-            <div><div class="mi-label">Email</div><div class="mi-val">irshadsaeed6363@gmail.com</div></div>
-          </div>
-          <div class="meta-item">
-            <i class="bi bi-telephone-fill"></i>
-            <div><div class="mi-label">Phone</div><div class="mi-val">+966 536805306</div></div>
-          </div>
-          <div class="meta-item">
-            <i class="bi bi-geo-alt-fill"></i>
-            <div><div class="mi-label">Location</div><div class="mi-val">Riyadh, Saudi Arabia</div></div>
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="nav-actions">
+            <button
+              class="theme-toggle"
+              id="themeToggle"
+              aria-label="Toggle theme"
+            >
+              <i class="bi bi-sun-fill sun"></i>
+              <i class="bi bi-moon-fill moon"></i>
+            </button>
+            <a href="#contact" class="btn-nav">Hire Me</a>
           </div>
         </div>
-        <a href="assets/cv/Irshad.pdf" download="Irshad-Saeed-CV.pdf" class="btn btn-primary">
-          <i class="bi bi-download"></i> Download CV
-        </a>
       </div>
-    </div>
-  </div>
-</section>
+    </nav>
 
-<!-- SKILLS -->
-<section class="section" id="skills">
-  <div class="container">
-    <div class="section-header centered reveal">
-      <div class="section-eyebrow"><i class="bi bi-lightning-fill"></i> My Expertise</div>
-      <h2 class="section-title">Professional <em>Skills</em></h2>
-      <p class="section-desc">A versatile skill set encompassing frontend, backend, and full-stack development with expertise in building robust, scalable, high-performance web applications.</p>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card reveal" style="transition-delay:.1s">
-        <div class="skill-card-head">
-          <div class="skill-icon"><i class="bi bi-palette-fill"></i></div>
-          <h3>Frontend Development</h3>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span>
-          <span class="skill-tag">Bootstrap</span><span class="skill-tag">Tailwind CSS</span>
-          <span class="skill-tag">Responsive Design</span><span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">jQuery</span><span class="skill-tag">React JS</span>
-          <span class="skill-tag">Next.js</span><span class="skill-tag">Ajax</span>
-          <span class="skill-tag">JSON</span><span class="skill-tag">API Integration</span>
-        </div>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-shapes">
+        <div class="h-ring hr-1"></div>
+        <div class="h-ring hr-2"></div>
+        <div class="h-ring hr-3"></div>
+        <span class="h-plus hp-1">+</span>
+        <span class="h-plus hp-2">+</span>
+        <span class="h-plus hp-3">+</span>
       </div>
-      <div class="skill-card reveal" style="transition-delay:.15s">
-        <div class="skill-card-head">
-          <div class="skill-icon"><i class="bi bi-server"></i></div>
-          <h3>Backend Development</h3>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag">PHP</span><span class="skill-tag">Laravel</span>
-          <span class="skill-tag">Symfony</span><span class="skill-tag">Node.js</span>
-          <span class="skill-tag">Express.js</span><span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">MVC</span><span class="skill-tag">OOP</span>
-        </div>
-      </div>
-      <div class="skill-card reveal" style="transition-delay:.2s">
-        <div class="skill-card-head">
-          <div class="skill-icon"><i class="bi bi-database-fill"></i></div>
-          <h3>Database</h3>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag">MySQL</span><span class="skill-tag">SQL Server</span>
-          <span class="skill-tag">MongoDB</span><span class="skill-tag">SQLite</span>
-          <span class="skill-tag">PostgreSQL</span><span class="skill-tag">Firebase</span>
-          <span class="skill-tag">Redis</span><span class="skill-tag">GraphQL</span>
-        </div>
-      </div>
-      <div class="skill-card reveal" style="transition-delay:.25s">
-        <div class="skill-card-head">
-          <div class="skill-icon"><i class="bi bi-tools"></i></div>
-          <h3>Tools & DevOps</h3>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag">Git/GitHub</span><span class="skill-tag">GitLab</span>
-          <span class="skill-tag">Docker</span><span class="skill-tag">CI/CD</span>
-          <span class="skill-tag">Postman</span><span class="skill-tag">cPanel</span>
-          <span class="skill-tag">FTP/SFTP</span><span class="skill-tag">Jenkins</span>
-          <span class="skill-tag">AWS</span><span class="skill-tag">Netlify</span>
-          <span class="skill-tag">Vercel</span>
-        </div>
-      </div>
-      <div class="skill-card reveal" style="transition-delay:.3s">
-        <div class="skill-card-head">
-          <div class="skill-icon"><i class="bi bi-cart-fill"></i></div>
-          <h3>E-Commerce</h3>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag">Stripe</span><span class="skill-tag">PayPal</span>
-          <span class="skill-tag">Laravel Cashier</span><span class="skill-tag">Payment Gateways</span>
-          <span class="skill-tag">Prestashop</span><span class="skill-tag">E-Commerce Optimization</span>
-        </div>
-      </div>
-      <div class="skill-card reveal" style="transition-delay:.35s">
-        <div class="skill-card-head">
-          <div class="skill-icon"><i class="bi bi-gear-fill"></i></div>
-          <h3>Other Skills</h3>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag">Google APIs</span><span class="skill-tag">PDF Generation</span>
-          <span class="skill-tag">OAuth</span><span class="skill-tag">Email Handling</span>
-          <span class="skill-tag">Website Customization</span><span class="skill-tag">Server Management</span>
-          <span class="skill-tag">Unit Testing</span><span class="skill-tag">Performance Optimization</span>
-          <span class="skill-tag">SEO Best Practices</span><span class="skill-tag">Cross-Browser</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section class="section exp-section" id="experience">
-  <div class="wave-sep"><svg viewBox="0 0 1200 70" preserveAspectRatio="none"><path d="M0,0 C300,70 900,0 1200,70 L1200,0 L0,0 Z" class="wf"/></svg></div>
-  <div class="container">
-    <div class="section-header centered reveal">
-      <div class="section-eyebrow"><i class="bi bi-briefcase-fill"></i> Career Path</div>
-      <h2 class="section-title">Work <em>Experience</em></h2>
-    </div>
-    <div class="timeline">
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
-        <div class="tl-card">
-          <div class="tl-date">Aug 2025 — Present</div>
-          <h3>Full Stack Developer</h3>
-          <h4>76 Rental Cars Gharnatia</h4>
-          <p>Currently developing <a href="https://scaouto.com/" target="_blank" rel="noopener">scaouto.com</a>, a modern car selling and marketplace platform featuring vehicle listings, dealer profiles, and a user-friendly buying experience.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
-        <div class="tl-card">
-          <div class="tl-date">Jul 2022 — May 2025</div>
-          <h3>Backend & Full Stack Developer</h3>
-          <h4>EBRIDGE Technology (Pvt) Ltd, Islamabad</h4>
-          <p>Delivered high-performing systems using Laravel and Symfony, built eCommerce platforms with Stripe integration, and developed dynamic, modern UIs with React.js and Next.js.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
-        <div class="tl-card">
-          <div class="tl-date">Feb 2024 — Feb 2025</div>
-          <h3>Customer Support Engineer</h3>
-          <h4>EBRIDGE Technology (Pvt) Ltd, Islamabad</h4>
-          <p>Handled client communication, quickly resolved website issues via FTP, cPanel, and staging, and provided effective solutions that ensured smooth operations and satisfied clients.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
-        <div class="tl-card">
-          <div class="tl-date">Dec 2020 — May 2022</div>
-          <h3>Full Stack Developer</h3>
-          <h4>Adbook Digital Company, Timergara</h4>
-          <p>Developed Zakat Management System, Blood Donation Platform, and Rental Management Application with robust functionality.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
-        <div class="tl-card">
-          <div class="tl-date">2020 — 2021</div>
-          <h3>Diploma in Information Technologies</h3>
-          <h4>Qaid-e-Azam Institute of Science & Technologies</h4>
-          <p>Completed a comprehensive IT program focused on Web Technologies, Database Systems, Software Engineering, and foundational AI.</p>
-        </div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
-        <div class="tl-card">
-          <div class="tl-date">2017 — 2021</div>
-          <h3>BS Computer Science</h3>
-          <h4>University of Malakand, Pakistan</h4>
-          <p>Completed 4-year degree with CGPA 3.15/4.0. Studied Web Technologies, Database Systems, Software Engineering, and AI.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="wave-sep"><svg viewBox="0 0 1200 70" preserveAspectRatio="none"><path d="M0,70 C300,0 900,70 1200,0 L1200,70 L0,70 Z" class="wf-i"/></svg></div>
-</section>
-
-<!-- PROJECTS -->
-<section class="section" id="projects">
-  <div class="container">
-    <div class="section-header centered reveal">
-      <div class="section-eyebrow"><i class="bi bi-folder-fill"></i> Portfolio</div>
-      <h2 class="section-title">Featured <em>Projects</em></h2>
-      <p class="section-desc">A selection of real-world projects built for clients and businesses — spanning e-commerce, SaaS, marketplaces, and custom integrations.</p>
-    </div>
-    <div class="project-filter" id="projectFilter">
-      <button class="filter-btn active" data-cat="all">All</button>
-      <button class="filter-btn" data-cat="E-Commerce">E-Commerce</button>
-      <button class="filter-btn" data-cat="Integration">Integration</button>
-      <button class="filter-btn" data-cat="Business">Business</button>
-      <button class="filter-btn" data-cat="Marketplace">Marketplace</button>
-      <button class="filter-btn" data-cat="Web App">Web App</button>
-    </div>
-    <div class="projects-grid" id="projectsGrid">
-
-      <div class="project-card" data-category="Integration">
-        <div class="project-thumb">
-          <span class="proj-cat">Integration</span>
-          <img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=800&q=80" alt="Auto Google Address" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-avail">
+            <span class="avail-dot"></span>
+            <span class="avail-txt">Available for Work</span>
           </div>
-        </div>
-        <div class="project-body">
-          <h3>Auto Google Address</h3>
-          <p>Google Places autocomplete for fast and accurate address entry.</p>
-          <div class="proj-tech"><span>PHP</span><span>Symfony</span><span>jQuery</span><span>Google API</span><span>Prestashop</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="Business">
-        <div class="project-thumb">
-          <span class="proj-cat">Security</span>
-          <img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&q=80" alt="Ban IP Address" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+          <span class="hero-greeting">Hello, I'm</span>
+          <h1 class="hero-name">
+            Irshad<br />
+            <span class="hl">Ullah</span>
+          </h1>
+          <div class="hero-role">
+            <span class="typed-text" id="typedText">Full Stack Developer</span
+            ><span class="cursor-type">|</span>
           </div>
-        </div>
-        <div class="project-body">
-          <h3>Ban IP Address Redirect</h3>
-          <p>Automatically blocks suspicious IP addresses and redirects users.</p>
-          <div class="proj-tech"><span>PHP</span><span>Symfony</span><span>OOP</span><span>MySQL</span><span>Prestashop</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="Integration">
-        <div class="project-thumb">
-          <span class="proj-cat">Integration</span>
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Google Sheets Connector" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+          <p class="hero-desc">
+            5+ years crafting exceptional digital experiences. Specialized in
+            Laravel, React, and modern web technologies — turning complex ideas
+            into powerful, scalable solutions.
+          </p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn btn-primary"
+              ><i class="bi bi-send-fill"></i> Let's Talk</a
+            >
+            <a href="#projects" class="btn btn-secondary"
+              ><i class="bi bi-collection-fill"></i> View Work</a
+            >
           </div>
-        </div>
-        <div class="project-body">
-          <h3>Google Sheets Connector</h3>
-          <p>Sync application data directly with Google Sheets in real time.</p>
-          <div class="proj-tech"><span>PHP</span><span>Symfony</span><span>Google Sheets API</span><span>Prestashop</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="Business">
-        <div class="project-thumb">
-          <span class="proj-cat">Productivity</span>
-          <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&q=80" alt="Availability Scheduler" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Availability Scheduler</h3>
-          <p>Smart appointment scheduling connected with Google Calendar.</p>
-          <div class="proj-tech"><span>PHP</span><span>Symfony</span><span>Google Calendar API</span><span>Prestashop</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="E-Commerce">
-        <div class="project-thumb">
-          <span class="proj-cat">Inventory</span>
-          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" alt="Stock Reservation" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Stock Reservation</h3>
-          <p>Automatic product stock reservation with expiry logic.</p>
-          <div class="proj-tech"><span>PHP</span><span>Symfony</span><span>MySQL</span><span>Prestashop</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="Business">
-        <div class="project-thumb">
-          <span class="proj-cat">Business</span>
-          <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80" alt="Advanced PDF Catalog" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Advanced PDF Catalog</h3>
-          <p>Automated generation of full PDF catalogs with custom templates.</p>
-          <div class="proj-tech"><span>PHP</span><span>Symfony</span><span>DomPDF</span><span>Prestashop</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="E-Commerce">
-        <div class="project-thumb">
-          <span class="proj-cat">E-Commerce</span>
-          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Request a Quote" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Request a Quote</h3>
-          <p>Custom quote system for businesses handling bulk orders.</p>
-          <div class="proj-tech"><span>PHP</span><span>Symfony</span><span>AJAX</span><span>Prestashop</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="E-Commerce">
-        <div class="project-thumb">
-          <span class="proj-cat">Products</span>
-          <img src="images/projects/max-and-match.png" alt="Max & Match" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Max & Match</h3>
-          <p>Dynamic product combination and conditional pricing engine.</p>
-          <div class="proj-tech"><span>PHP</span><span>Symfony</span><span>MySQL</span><span>Prestashop</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="E-Commerce">
-        <div class="project-thumb">
-          <span class="proj-cat">E-Commerce</span>
-          <img src="images/projects/hide-price.webp" alt="Hide Price" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Hide Price Module</h3>
-          <p>Hide prices for specific customer groups or products.</p>
-          <div class="proj-tech"><span>PHP</span><span>Symfony</span><span>MySQL</span><span>Prestashop</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="Integration">
-        <div class="project-thumb">
-          <span class="proj-cat">Reviews</span>
-          <img src="images/projects/google-reviews.png" alt="Google Reviews" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Google Reviews Integration</h3>
-          <p>Displays real user reviews fetched from Google My Business.</p>
-          <div class="proj-tech"><span>PHP</span><span>Symfony</span><span>Google Reviews API</span><span>Prestashop</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="Web App">
-        <div class="project-thumb">
-          <span class="proj-cat">Web App</span>
-          <img src="images/projects/bookify.png" alt="Bookify" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Bookify</h3>
-          <p>Online booking platform with real-time availability management.</p>
-          <div class="proj-tech"><span>Laravel</span><span>React JS</span><span>Next.js</span><span>MySQL</span><span>Stripe</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="Marketplace">
-        <div class="project-thumb">
-          <span class="proj-cat">Marketplace</span>
-          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80" alt="Saudi Auto Marketplace" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Saudi Auto Marketplace</h3>
-          <p>Car selling platform with advanced marketplace features.</p>
-          <div class="proj-tech"><span>Laravel</span><span>React JS</span><span>MySQL</span><span>REST API</span><span>Stripe</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="E-Commerce">
-        <div class="project-thumb">
-          <span class="proj-cat">E-Commerce</span>
-          <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80" alt="Multiple E-Commerce Projects" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Multiple Online E-Commerce Sites</h3>
-          <p>Developed and customized multiple e-commerce sites globally.</p>
-          <div class="proj-tech"><span>Laravel</span><span>React JS</span><span>Tailwind</span><span>MySQL</span><span>Stripe</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="Business">
-        <div class="project-thumb">
-          <span class="proj-cat">Agency</span>
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Clovera Digital Agency" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Clovera Digital Agency</h3>
-          <p>Professional agency website offering digital services.</p>
-          <div class="proj-tech"><span>Laravel</span><span>React JS</span><span>Tailwind</span><span>MySQL</span><span>Stripe</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="Web App">
-        <div class="project-thumb">
-          <span class="proj-cat">Healthcare</span>
-          <img src="https://images.unsplash.com/photo-1615461066159-fea0960485d5?w=800&q=80" alt="Blood Donation System" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Blood Donation System</h3>
-          <p>Platform connecting donors and recipients in real time.</p>
-          <div class="proj-tech"><span>PHP</span><span>OOP</span><span>MySQL</span><span>jQuery</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="Web App">
-        <div class="project-thumb">
-          <span class="proj-cat">Finance</span>
-          <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80" alt="Zakat Management System" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Zakat Management System</h3>
-          <p>Complete digital solution for Zakat calculation and distribution.</p>
-          <div class="proj-tech"><span>PHP</span><span>Laravel</span><span>MySQL</span><span>Bootstrap</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="Marketplace">
-        <div class="project-thumb">
-          <span class="proj-cat">Property</span>
-          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80" alt="Rental Management System" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Rental Management System</h3>
-          <p>Complete digital solution for property rental management.</p>
-          <div class="proj-tech"><span>PHP</span><span>OOP</span><span>MySQL</span><span>Bootstrap</span></div>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="Web App">
-        <div class="project-thumb">
-          <span class="proj-cat">Dashboard</span>
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Admin Dashboard" loading="lazy">
-          <div class="project-overlay">
-            <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-            <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-        <div class="project-body">
-          <h3>Admin Dashboard</h3>
-          <p>Analytics & management dashboard with interactive charts.</p>
-          <div class="proj-tech"><span>React JS</span><span>Next.js</span><span>Laravel</span><span>MySQL</span></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section contact-section" id="contact">
-  <div class="wave-sep"><svg viewBox="0 0 1200 70" preserveAspectRatio="none"><path d="M0,0 C300,70 900,0 1200,70 L1200,0 L0,0 Z" class="wf"/></svg></div>
-  <div class="container">
-    <div class="section-header centered reveal">
-      <div class="section-eyebrow"><i class="bi bi-envelope-fill"></i> Get In Touch</div>
-      <h2 class="section-title">Let's <em>Work Together</em></h2>
-      <p class="section-desc">Open to new opportunities, freelance projects, and collaborations. Let's build something remarkable.</p>
-    </div>
-    <div class="contact-layout">
-      <div class="contact-info-side reveal-l">
-        <h3>Ready to start a project?</h3>
-        <p>I'm always open to discussing new ideas or opportunities. Drop me a message and I'll get back to you as soon as possible.</p>
-        <div class="contact-items">
-          <div class="c-item">
-            <div class="c-icon"><i class="bi bi-geo-alt-fill"></i></div>
-            <div><div class="c-label">Location</div><div class="c-val">Manfuhah 12683, Riyadh, KSA</div></div>
-          </div>
-          <div class="c-item">
-            <div class="c-icon"><i class="bi bi-envelope-fill"></i></div>
-            <div><div class="c-label">Email</div><div class="c-val">irshadsaeed6363@gmail.com</div></div>
-          </div>
-          <div class="c-item">
-            <div class="c-icon"><i class="bi bi-telephone-fill"></i></div>
-            <div><div class="c-label">Phone</div><div class="c-val">+966 536805306</div></div>
-          </div>
-        </div>
-        <div class="social-row">
-          <a href="https://www.linkedin.com/in/irshad-saeed-33329420a" target="_blank" rel="noopener" class="soc-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-          <a href="https://github.com/irshadsaeed" target="_blank" rel="noopener" class="soc-btn" aria-label="GitHub"><i class="bi bi-github"></i></a>
-          <a href="https://wa.me/966536805306" target="_blank" rel="noopener" class="soc-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-          <a href="mailto:irshadsaeed6363@gmail.com" class="soc-btn" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
-        </div>
-      </div>
-      <div class="contact-form-side reveal-r">
-        <form id="contactForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label>Your Name</label>
-              <input type="text" placeholder="John Doe" required>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-val">
+                <span data-count="50">0</span><em>+</em>
+              </div>
+              <div class="stat-label">Projects</div>
             </div>
-            <div class="form-group">
-              <label>Your Email</label>
-              <input type="email" placeholder="john@example.com" required>
+            <div class="stat">
+              <div class="stat-val">
+                <span data-count="5">0</span><em>+</em>
+              </div>
+              <div class="stat-label">Years Exp</div>
+            </div>
+            <div class="stat">
+              <div class="stat-val">
+                <span data-count="30">0</span><em>+</em>
+              </div>
+              <div class="stat-label">Clients</div>
             </div>
           </div>
-          <div class="form-group">
-            <label>Subject</label>
-            <input type="text" placeholder="Project Discussion">
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo-wrap">
+            <div class="photo-glow"></div>
+            <div class="photo-ring"></div>
+            <div class="hero-photo-frame">
+              <img src="images/image.png" alt="Irshad Ullah" loading="eager" />
+            </div>
           </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea placeholder="Tell me about your project..."></textarea>
+          <div class="info-card ic-stack">
+            <div class="ic-icon"><i class="bi bi-code-slash"></i></div>
+            <div class="ic-text">
+              <strong>Full Stack</strong><span>Developer</span>
+            </div>
           </div>
-          <button type="submit" class="btn-submit"><i class="bi bi-send-fill"></i> Send Message</button>
-        </form>
+          <div class="info-card ic-exp">
+            <div class="ic-icon"><i class="bi bi-trophy-fill"></i></div>
+            <div class="ic-text">
+              <strong>5+ Years</strong><span>Experience</span>
+            </div>
+          </div>
+          <div class="info-card ic-loc">
+            <div class="ic-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div class="ic-text">
+              <strong>Riyadh</strong><span>Saudi Arabia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STRIP -->
+    <div class="tech-strip">
+      <div class="marquee-track">
+        <span class="marquee-item"><i class="bi bi-dot"></i>Laravel</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>React JS</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>Next.js</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>PHP</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>Node.js</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>MySQL</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>Tailwind CSS</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>Docker</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>Prestashop</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>Symfony</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>MongoDB</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>Redis</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>AWS</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>PostgreSQL</span>
+        <!-- duplicate for seamless loop -->
+        <span class="marquee-item"><i class="bi bi-dot"></i>Laravel</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>React JS</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>Next.js</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>PHP</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>Node.js</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>MySQL</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>Tailwind CSS</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>Docker</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>Prestashop</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>Symfony</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>MongoDB</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>Redis</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>AWS</span>
+        <span class="marquee-item"><i class="bi bi-dot"></i>PostgreSQL</span>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="#home" class="footer-logo-wrap">
-          <div class="fl-icon"><i class="bi bi-code-slash"></i></div>
-          Irshad Ullah
-        </a>
-        <p>Full Stack Developer crafting exceptional digital experiences with modern technologies and innovative solutions.</p>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/irshad-saeed-33329420a" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-          <a href="https://github.com/irshadsaeed" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
-          <a href="https://wa.me/966536805306" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-          <a href="mailto:irshadsaeed6363@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-wrap">
+          <div class="about-img-side reveal-l">
+            <div class="about-decor"><i class="bi bi-braces"></i></div>
+            <div class="about-img-main">
+              <img src="images/irshad.jpeg" alt="Irshad Ullah" loading="lazy" />
+            </div>
+            <div class="exp-badge">
+              <span class="big">5+</span>
+              <span class="sm">Years of<br />Experience</span>
+            </div>
+          </div>
+          <div class="about-text reveal-r">
+            <div class="section-eyebrow">
+              <i class="bi bi-person-fill"></i> About Me
+            </div>
+            <h2 class="section-title">
+              Passionate Developer Creating <em>Digital Excellence</em>
+            </h2>
+            <p>
+              I'm a Full Stack Developer with 5+ years of experience, having
+              started my career at Adbook Digital Solutions and later spending 3
+              years at EBRIDGE Technology as a Backend Developer,
+              Laravel/Frontend Developer, and Customer Support Engineer.
+            </p>
+            <p>
+              I'm currently working at 76 Rental Cars Gharnatia, building a
+              modern car selling and marketplace platform, after delivering 50+
+              client projects and developing live digital products with a strong
+              focus on performance and business-driven results.
+            </p>
+            <div class="about-meta">
+              <div class="meta-item">
+                <i class="bi bi-person-fill"></i>
+                <div>
+                  <div class="mi-label">Name</div>
+                  <div class="mi-val">Irshad Ullah</div>
+                </div>
+              </div>
+              <div class="meta-item">
+                <i class="bi bi-envelope-fill"></i>
+                <div>
+                  <div class="mi-label">Email</div>
+                  <div class="mi-val">irshadsaeed6363@gmail.com</div>
+                </div>
+              </div>
+              <div class="meta-item">
+                <i class="bi bi-telephone-fill"></i>
+                <div>
+                  <div class="mi-label">Phone</div>
+                  <div class="mi-val">+966 536805306</div>
+                </div>
+              </div>
+              <div class="meta-item">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                  <div class="mi-label">Location</div>
+                  <div class="mi-val">Riyadh, Saudi Arabia</div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="assets/cv/Irshad.pdf"
+              download="Irshad-Saeed-CV.pdf"
+              class="btn btn-primary"
+            >
+              <i class="bi bi-download"></i> Download CV
+            </a>
+          </div>
         </div>
       </div>
-      <div class="footer-col">
-        <h5>Quick Links</h5>
-        <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#about">About Me</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h5>Stay Connected</h5>
-        <p style="font-size:.85rem;color:var(--chalk-mute);line-height:1.7;margin-bottom:.75rem">Subscribe for updates on latest projects and tech insights.</p>
-        <div class="newsletter-form">
-          <input type="email" placeholder="Your email">
-          <button type="button">Subscribe</button>
-        </div>
-        <div style="margin-top:1.5rem;display:flex;flex-direction:column;gap:.6rem">
-          <div style="font-size:.84rem;color:var(--chalk-mute);display:flex;align-items:center;gap:8px"><i class="bi bi-geo-alt-fill" style="color:var(--gold)"></i> Riyadh, Saudi Arabia</div>
-          <a href="tel:+966536805306" style="font-size:.84rem;color:var(--chalk-mute);display:flex;align-items:center;gap:8px"><i class="bi bi-telephone-fill" style="color:var(--gold)"></i> +966 536 805 306</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 <span>Irshad Ullah</span>. All Rights Reserved.</p>
-      <div class="footer-btm-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-      </div>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <div class="section-eyebrow">
+            <i class="bi bi-lightning-fill"></i> My Expertise
+          </div>
+          <h2 class="section-title">Professional <em>Skills</em></h2>
+          <p class="section-desc">
+            A versatile skill set encompassing frontend, backend, and full-stack
+            development with expertise in building robust, scalable,
+            high-performance web applications.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal" style="transition-delay: 0.1s">
+            <div class="skill-card-head">
+              <div class="skill-icon"><i class="bi bi-palette-fill"></i></div>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span
+              ><span class="skill-tag">CSS3</span>
+              <span class="skill-tag">Bootstrap</span
+              ><span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Responsive Design</span
+              ><span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">jQuery</span
+              ><span class="skill-tag">React JS</span>
+              <span class="skill-tag">Next.js</span
+              ><span class="skill-tag">Ajax</span>
+              <span class="skill-tag">JSON</span
+              ><span class="skill-tag">API Integration</span>
+            </div>
+          </div>
+          <div class="skill-card reveal" style="transition-delay: 0.15s">
+            <div class="skill-card-head">
+              <div class="skill-icon"><i class="bi bi-server"></i></div>
+              <h3>Backend Development</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">PHP</span
+              ><span class="skill-tag">Laravel</span>
+              <span class="skill-tag">Symfony</span
+              ><span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span
+              ><span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">MVC</span
+              ><span class="skill-tag">OOP</span>
+            </div>
+          </div>
+          <div class="skill-card reveal" style="transition-delay: 0.2s">
+            <div class="skill-card-head">
+              <div class="skill-icon"><i class="bi bi-database-fill"></i></div>
+              <h3>Database</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">MySQL</span
+              ><span class="skill-tag">SQL Server</span>
+              <span class="skill-tag">MongoDB</span
+              ><span class="skill-tag">SQLite</span>
+              <span class="skill-tag">PostgreSQL</span
+              ><span class="skill-tag">Firebase</span>
+              <span class="skill-tag">Redis</span
+              ><span class="skill-tag">GraphQL</span>
+            </div>
+          </div>
+          <div class="skill-card reveal" style="transition-delay: 0.25s">
+            <div class="skill-card-head">
+              <div class="skill-icon"><i class="bi bi-tools"></i></div>
+              <h3>Tools & DevOps</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Git/GitHub</span
+              ><span class="skill-tag">GitLab</span>
+              <span class="skill-tag">Docker</span
+              ><span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">Postman</span
+              ><span class="skill-tag">cPanel</span>
+              <span class="skill-tag">FTP/SFTP</span
+              ><span class="skill-tag">Jenkins</span>
+              <span class="skill-tag">AWS</span
+              ><span class="skill-tag">Netlify</span>
+              <span class="skill-tag">Vercel</span>
+            </div>
+          </div>
+          <div class="skill-card reveal" style="transition-delay: 0.3s">
+            <div class="skill-card-head">
+              <div class="skill-icon"><i class="bi bi-cart-fill"></i></div>
+              <h3>E-Commerce</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Stripe</span
+              ><span class="skill-tag">PayPal</span>
+              <span class="skill-tag">Laravel Cashier</span
+              ><span class="skill-tag">Payment Gateways</span>
+              <span class="skill-tag">Prestashop</span
+              ><span class="skill-tag">E-Commerce Optimization</span>
+            </div>
+          </div>
+          <div class="skill-card reveal" style="transition-delay: 0.35s">
+            <div class="skill-card-head">
+              <div class="skill-icon"><i class="bi bi-gear-fill"></i></div>
+              <h3>Other Skills</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Google APIs</span
+              ><span class="skill-tag">PDF Generation</span>
+              <span class="skill-tag">OAuth</span
+              ><span class="skill-tag">Email Handling</span>
+              <span class="skill-tag">Website Customization</span
+              ><span class="skill-tag">Server Management</span>
+              <span class="skill-tag">Unit Testing</span
+              ><span class="skill-tag">Performance Optimization</span>
+              <span class="skill-tag">SEO Best Practices</span
+              ><span class="skill-tag">Cross-Browser</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script src="js/portfolio.js"></script>
-</body>
+    <!-- EXPERIENCE -->
+    <section class="section exp-section" id="experience">
+      <div class="wave-sep">
+        <svg viewBox="0 0 1200 70" preserveAspectRatio="none">
+          <path d="M0,0 C300,70 900,0 1200,70 L1200,0 L0,0 Z" class="wf" />
+        </svg>
+      </div>
+      <div class="container">
+        <div class="section-header centered reveal">
+          <div class="section-eyebrow">
+            <i class="bi bi-briefcase-fill"></i> Career Path
+          </div>
+          <h2 class="section-title">Work <em>Experience</em></h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+            <div class="tl-card">
+              <div class="tl-date">Aug 2025 — Present</div>
+              <h3>Full Stack Developer</h3>
+              <h4>76 Rental Cars Gharnatia</h4>
+              <p>
+                Currently developing
+                <a href="https://scaouto.com/" target="_blank" rel="noopener"
+                  >scaouto.com</a
+                >, a modern car selling and marketplace platform featuring
+                vehicle listings, dealer profiles, and a user-friendly buying
+                experience.
+              </p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+            <div class="tl-card">
+              <div class="tl-date">Jul 2022 — May 2025</div>
+              <h3>Backend & Full Stack Developer</h3>
+              <h4>EBRIDGE Technology (Pvt) Ltd, Islamabad</h4>
+              <p>
+                Delivered high-performing systems using Laravel and Symfony,
+                built eCommerce platforms with Stripe integration, and developed
+                dynamic, modern UIs with React.js and Next.js.
+              </p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+            <div class="tl-card">
+              <div class="tl-date">Feb 2024 — Feb 2025</div>
+              <h3>Customer Support Engineer</h3>
+              <h4>EBRIDGE Technology (Pvt) Ltd, Islamabad</h4>
+              <p>
+                Handled client communication, quickly resolved website issues
+                via FTP, cPanel, and staging, and provided effective solutions
+                that ensured smooth operations and satisfied clients.
+              </p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+            <div class="tl-card">
+              <div class="tl-date">Dec 2020 — May 2022</div>
+              <h3>Full Stack Developer</h3>
+              <h4>Adbook Digital Company, Timergara</h4>
+              <p>
+                Developed Zakat Management System, Blood Donation Platform, and
+                Rental Management Application with robust functionality.
+              </p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+            <div class="tl-card">
+              <div class="tl-date">2020 — 2021</div>
+              <h3>Diploma in Information Technologies</h3>
+              <h4>Qaid-e-Azam Institute of Science & Technologies</h4>
+              <p>
+                Completed a comprehensive IT program focused on Web
+                Technologies, Database Systems, Software Engineering, and
+                foundational AI.
+              </p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+            <div class="tl-card">
+              <div class="tl-date">2017 — 2021</div>
+              <h3>BS Computer Science</h3>
+              <h4>University of Malakand, Pakistan</h4>
+              <p>
+                Completed 4-year degree with CGPA 3.15/4.0. Studied Web
+                Technologies, Database Systems, Software Engineering, and AI.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wave-sep">
+        <svg viewBox="0 0 1200 70" preserveAspectRatio="none">
+          <path d="M0,70 C300,0 900,70 1200,0 L1200,70 L0,70 Z" class="wf-i" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header centered reveal">
+          <div class="section-eyebrow">
+            <i class="bi bi-folder-fill"></i> Portfolio
+          </div>
+          <h2 class="section-title">Featured <em>Projects</em></h2>
+          <p class="section-desc">
+            A selection of real-world projects built for clients and businesses
+            — spanning e-commerce, SaaS, marketplaces, and custom integrations.
+          </p>
+        </div>
+        <div class="project-filter" id="projectFilter">
+          <button class="filter-btn active" data-cat="all">All</button>
+          <button class="filter-btn" data-cat="E-Commerce">E-Commerce</button>
+          <button class="filter-btn" data-cat="Integration">Integration</button>
+          <button class="filter-btn" data-cat="Business">Business</button>
+          <button class="filter-btn" data-cat="Marketplace">Marketplace</button>
+          <button class="filter-btn" data-cat="Web App">Web App</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+          <div class="project-card" data-category="SaaS">
+            <div class="project-thumb">
+              <span class="proj-cat">SaaS Platform</span>
+
+              <img
+                src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&q=80"
+                alt="ProposalCraft SaaS Platform"
+                loading="lazy"
+              />
+
+              <div class="project-overlay">
+                <a
+                  href="https://irshad-portfolio-version-02.vercel.app/"
+                  class="proj-action"
+                  target="_blank"
+                >
+                  <i class="bi bi-eye-fill"></i>
+                </a>
+
+                <a
+                  href="https://github.com/irshadsaeed/"
+                  class="proj-action"
+                  target="_blank"
+                >
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3>ProposalCraft SaaS</h3>
+
+              <p>
+                A modern SaaS platform designed for freelancers and agencies to
+                create, manage, and send professional client proposals with a
+                clean workflow and powerful dashboard.
+              </p>
+
+              <div class="proj-tech">
+                <span>Laravel</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Blade</span>
+                <span>REST API</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="Marketplace">
+            <div class="project-thumb">
+              <span class="proj-cat">Marketplace</span>
+              <img
+                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80"
+                alt="Saudi Auto Marketplace"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Saudi Auto Marketplace</h3>
+              <p>Car selling platform with advanced marketplace features.</p>
+              <div class="proj-tech">
+                <span>Laravel</span><span>React JS</span><span>MySQL</span
+                ><span>REST API</span><span>Stripe</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="Integration">
+            <div class="project-thumb">
+              <span class="proj-cat">Integration</span>
+              <img
+                src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=800&q=80"
+                alt="Auto Google Address"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Auto Google Address</h3>
+              <p>
+                Google Places autocomplete for fast and accurate address entry.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span><span>jQuery</span
+                ><span>Google API</span><span>Prestashop</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="Business">
+            <div class="project-thumb">
+              <span class="proj-cat">Security</span>
+              <img
+                src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&q=80"
+                alt="Ban IP Address"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Ban IP Address Redirect</h3>
+              <p>
+                Automatically blocks suspicious IP addresses and redirects
+                users.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span><span>OOP</span
+                ><span>MySQL</span><span>Prestashop</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="Integration">
+            <div class="project-thumb">
+              <span class="proj-cat">Integration</span>
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+                alt="Google Sheets Connector"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Google Sheets Connector</h3>
+              <p>
+                Sync application data directly with Google Sheets in real time.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span
+                ><span>Google Sheets API</span><span>Prestashop</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="Business">
+            <div class="project-thumb">
+              <span class="proj-cat">Productivity</span>
+              <img
+                src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&q=80"
+                alt="Availability Scheduler"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Availability Scheduler</h3>
+              <p>
+                Smart appointment scheduling connected with Google Calendar.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span
+                ><span>Google Calendar API</span><span>Prestashop</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="E-Commerce">
+            <div class="project-thumb">
+              <span class="proj-cat">Inventory</span>
+              <img
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80"
+                alt="Stock Reservation"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Stock Reservation</h3>
+              <p>Automatic product stock reservation with expiry logic.</p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span><span>MySQL</span
+                ><span>Prestashop</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="Business">
+            <div class="project-thumb">
+              <span class="proj-cat">Business</span>
+              <img
+                src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80"
+                alt="Advanced PDF Catalog"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Advanced PDF Catalog</h3>
+              <p>
+                Automated generation of full PDF catalogs with custom templates.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span><span>DomPDF</span
+                ><span>Prestashop</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="E-Commerce">
+            <div class="project-thumb">
+              <span class="proj-cat">E-Commerce</span>
+              <img
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+                alt="Request a Quote"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Request a Quote</h3>
+              <p>Custom quote system for businesses handling bulk orders.</p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span><span>AJAX</span
+                ><span>Prestashop</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="E-Commerce">
+            <div class="project-thumb">
+              <span class="proj-cat">Products</span>
+              <img
+                src="images/projects/max-and-match.png"
+                alt="Max & Match"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Max & Match</h3>
+              <p>Dynamic product combination and conditional pricing engine.</p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span><span>MySQL</span
+                ><span>Prestashop</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="E-Commerce">
+            <div class="project-thumb">
+              <span class="proj-cat">E-Commerce</span>
+              <img
+                src="images/projects/hide-price.webp"
+                alt="Hide Price"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Hide Price Module</h3>
+              <p>Hide prices for specific customer groups or products.</p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span><span>MySQL</span
+                ><span>Prestashop</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="Integration">
+            <div class="project-thumb">
+              <span class="proj-cat">Reviews</span>
+              <img
+                src="images/projects/google-reviews.png"
+                alt="Google Reviews"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Google Reviews Integration</h3>
+              <p>Displays real user reviews fetched from Google My Business.</p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span
+                ><span>Google Reviews API</span><span>Prestashop</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="Web App">
+            <div class="project-thumb">
+              <span class="proj-cat">Web App</span>
+              <img
+                src="images/projects/bookify.png"
+                alt="Bookify"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Bookify</h3>
+              <p>
+                Online booking platform with real-time availability management.
+              </p>
+              <div class="proj-tech">
+                <span>Laravel</span><span>React JS</span><span>Next.js</span
+                ><span>MySQL</span><span>Stripe</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="E-Commerce">
+            <div class="project-thumb">
+              <span class="proj-cat">E-Commerce</span>
+              <img
+                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80"
+                alt="Multiple E-Commerce Projects"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Multiple Online E-Commerce Sites</h3>
+              <p>
+                Developed and customized multiple e-commerce sites globally.
+              </p>
+              <div class="proj-tech">
+                <span>Laravel</span><span>React JS</span><span>Tailwind</span
+                ><span>MySQL</span><span>Stripe</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="Business">
+            <div class="project-thumb">
+              <span class="proj-cat">Agency</span>
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+                alt="Clovera Digital Agency"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Clovera Digital Agency</h3>
+              <p>Professional agency website offering digital services.</p>
+              <div class="proj-tech">
+                <span>Laravel</span><span>React JS</span><span>Tailwind</span
+                ><span>MySQL</span><span>Stripe</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="Web App">
+            <div class="project-thumb">
+              <span class="proj-cat">Healthcare</span>
+              <img
+                src="https://images.unsplash.com/photo-1615461066159-fea0960485d5?w=800&q=80"
+                alt="Blood Donation System"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Blood Donation System</h3>
+              <p>Platform connecting donors and recipients in real time.</p>
+              <div class="proj-tech">
+                <span>PHP</span><span>OOP</span><span>MySQL</span
+                ><span>jQuery</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="Web App">
+            <div class="project-thumb">
+              <span class="proj-cat">Finance</span>
+              <img
+                src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80"
+                alt="Zakat Management System"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Zakat Management System</h3>
+              <p>
+                Complete digital solution for Zakat calculation and
+                distribution.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Laravel</span><span>MySQL</span
+                ><span>Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="Marketplace">
+            <div class="project-thumb">
+              <span class="proj-cat">Property</span>
+              <img
+                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80"
+                alt="Rental Management System"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Rental Management System</h3>
+              <p>Complete digital solution for property rental management.</p>
+              <div class="proj-tech">
+                <span>PHP</span><span>OOP</span><span>MySQL</span
+                ><span>Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="Web App">
+            <div class="project-thumb">
+              <span class="proj-cat">Dashboard</span>
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+                alt="Admin Dashboard"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Admin Dashboard</h3>
+              <p>Analytics & management dashboard with interactive charts.</p>
+              <div class="proj-tech">
+                <span>React JS</span><span>Next.js</span><span>Laravel</span
+                ><span>MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="wave-sep">
+        <svg viewBox="0 0 1200 70" preserveAspectRatio="none">
+          <path d="M0,0 C300,70 900,0 1200,70 L1200,0 L0,0 Z" class="wf" />
+        </svg>
+      </div>
+      <div class="container">
+        <div class="section-header centered reveal">
+          <div class="section-eyebrow">
+            <i class="bi bi-envelope-fill"></i> Get In Touch
+          </div>
+          <h2 class="section-title">Let's <em>Work Together</em></h2>
+          <p class="section-desc">
+            Open to new opportunities, freelance projects, and collaborations.
+            Let's build something remarkable.
+          </p>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-info-side reveal-l">
+            <h3>Ready to start a project?</h3>
+            <p>
+              I'm always open to discussing new ideas or opportunities. Drop me
+              a message and I'll get back to you as soon as possible.
+            </p>
+            <div class="contact-items">
+              <div class="c-item">
+                <div class="c-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <div class="c-label">Location</div>
+                  <div class="c-val">Manfuhah 12683, Riyadh, KSA</div>
+                </div>
+              </div>
+              <div class="c-item">
+                <div class="c-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <div class="c-label">Email</div>
+                  <div class="c-val">irshadsaeed6363@gmail.com</div>
+                </div>
+              </div>
+              <div class="c-item">
+                <div class="c-icon"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <div class="c-label">Phone</div>
+                  <div class="c-val">+966 536805306</div>
+                </div>
+              </div>
+            </div>
+            <div class="social-row">
+              <a
+                href="https://www.linkedin.com/in/irshad-saeed-33329420a"
+                target="_blank"
+                rel="noopener"
+                class="soc-btn"
+                aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/irshadsaeed"
+                target="_blank"
+                rel="noopener"
+                class="soc-btn"
+                aria-label="GitHub"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://wa.me/966536805306"
+                target="_blank"
+                rel="noopener"
+                class="soc-btn"
+                aria-label="WhatsApp"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+              <a
+                href="mailto:irshadsaeed6363@gmail.com"
+                class="soc-btn"
+                aria-label="Email"
+                ><i class="bi bi-envelope-fill"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-form-side reveal-r">
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Your Name</label>
+                  <input type="text" placeholder="John Doe" required />
+                </div>
+                <div class="form-group">
+                  <label>Your Email</label>
+                  <input type="email" placeholder="john@example.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Subject</label>
+                <input type="text" placeholder="Project Discussion" />
+              </div>
+              <div class="form-group">
+                <label>Message</label>
+                <textarea
+                  placeholder="Tell me about your project..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-submit">
+                <i class="bi bi-send-fill"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="footer-logo-wrap">
+              <div class="fl-icon"><i class="bi bi-code-slash"></i></div>
+              Irshad Ullah
+            </a>
+            <p>
+              Full Stack Developer crafting exceptional digital experiences with
+              modern technologies and innovative solutions.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://www.linkedin.com/in/irshad-saeed-33329420a"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/irshadsaeed"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://wa.me/966536805306"
+                target="_blank"
+                rel="noopener"
+                aria-label="WhatsApp"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+              <a href="mailto:irshadsaeed6363@gmail.com" aria-label="Email"
+                ><i class="bi bi-envelope-fill"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h5>Quick Links</h5>
+            <div class="footer-links">
+              <a href="#home">Home</a>
+              <a href="#about">About Me</a>
+              <a href="#skills">Skills</a>
+              <a href="#experience">Experience</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h5>Stay Connected</h5>
+            <p
+              style="
+                font-size: 0.85rem;
+                color: var(--chalk-mute);
+                line-height: 1.7;
+                margin-bottom: 0.75rem;
+              "
+            >
+              Subscribe for updates on latest projects and tech insights.
+            </p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="Your email" />
+              <button type="button">Subscribe</button>
+            </div>
+            <div
+              style="
+                margin-top: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.6rem;
+              "
+            >
+              <div
+                style="
+                  font-size: 0.84rem;
+                  color: var(--chalk-mute);
+                  display: flex;
+                  align-items: center;
+                  gap: 8px;
+                "
+              >
+                <i class="bi bi-geo-alt-fill" style="color: var(--gold)"></i>
+                Riyadh, Saudi Arabia
+              </div>
+              <a
+                href="tel:+966536805306"
+                style="
+                  font-size: 0.84rem;
+                  color: var(--chalk-mute);
+                  display: flex;
+                  align-items: center;
+                  gap: 8px;
+                "
+                ><i class="bi bi-telephone-fill" style="color: var(--gold)"></i>
+                +966 536 805 306</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 <span>Irshad Ullah</span>. All Rights Reserved.</p>
+          <div class="footer-btm-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="js/portfolio.js"></script>
+  </body>
 </html>
