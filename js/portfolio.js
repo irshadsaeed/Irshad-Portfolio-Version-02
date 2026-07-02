@@ -145,3 +145,29 @@ if (window.matchMedia('(pointer: fine)').matches) {
     el.addEventListener('mouseleave', () => document.body.classList.remove('c-hover'));
   });
 }
+
+
+// Project filter
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+ 
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.cat;
+    projectCards.forEach(card => {
+      const cardCat = card.dataset.category;
+      const show = cat === 'all' || cardCat === cat;
+      card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+      if (show) {
+        card.style.opacity = '1';
+        card.style.transform = '';
+        card.style.display = 'flex';
+      } else {
+        card.style.opacity = '0';
+        card.style.display = 'none';
+      }
+    });
+  });
+});

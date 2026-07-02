@@ -505,7 +505,7 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- ========== REPLACE YOUR PROJECTS SECTION WITH THIS ========== -->
     <section class="section" id="projects">
       <div class="container">
         <div class="section-header centered reveal">
@@ -514,47 +514,70 @@
           </div>
           <h2 class="section-title">Featured <em>Projects</em></h2>
           <p class="section-desc">
-            A selection of real-world projects built for clients and businesses
-            — spanning e-commerce, SaaS, marketplaces, and custom integrations.
+            Real-world platforms built for clients across Saudi Arabia and
+            internationally — marketplaces, SaaS, eCommerce, booking systems,
+            and custom integrations.
           </p>
         </div>
+
         <div class="project-filter" id="projectFilter">
           <button class="filter-btn active" data-cat="all">All</button>
-          <button class="filter-btn" data-cat="E-Commerce">E-Commerce</button>
-          <button class="filter-btn" data-cat="Integration">Integration</button>
-          <button class="filter-btn" data-cat="Business">Business</button>
           <button class="filter-btn" data-cat="Marketplace">Marketplace</button>
+          <button class="filter-btn" data-cat="SaaS">SaaS</button>
+          <button class="filter-btn" data-cat="E-Commerce">E-Commerce</button>
+          <button class="filter-btn" data-cat="Business">Business</button>
+          <button class="filter-btn" data-cat="Integration">Integration</button>
           <button class="filter-btn" data-cat="Web App">Web App</button>
+          <button class="filter-btn" data-cat="Portfolio">Portfolio</button>
+          <button class="filter-btn" data-cat="Prestashop Module">
+            PrestaShop
+          </button>
         </div>
-        <div class="projects-grid" id="projectsGrid">
 
-           <div class="project-card" data-category="Marketplace">
+        <div class="projects-grid" id="projectsGrid">
+          <!-- FEATURED: Saudi Autos -->
+          <div class="project-card featured" data-category="Marketplace">
             <div class="project-thumb">
               <span class="proj-cat">Marketplace</span>
               <img
                 src="images/projects/saudi-autos.png"
-                alt="Saudi Auto Marketplace"
+                alt="Saudi Autos"
                 loading="lazy"
               />
               <div class="project-overlay">
-                <a href="https://scaouto.com" class="proj-action"
+                <a
+                  href="https://scaouto.com"
+                  class="proj-action"
+                  target="_blank"
                   ><i class="bi bi-eye-fill"></i
                 ></a>
-                <a href="https://github.com/irshadsaeed/Saudi-Autos" class="proj-action"
+                <a
+                  href="https://github.com/irshadsaeed/Saudi-Autos"
+                  class="proj-action"
+                  target="_blank"
                   ><i class="bi bi-github"></i
                 ></a>
               </div>
             </div>
             <div class="project-body">
-              <h3>Saudi Auto Marketplace</h3>
-              <p>Car selling platform with advanced marketplace features.</p>
+              <span class="proj-live-badge">Live</span>
+              <h3>Saudi Autos — Trilingual Automotive Marketplace</h3>
+              <p>
+                Full automotive platform with Sales, Rental & Marketplace
+                modules. Trilingual (AR/EN/ZH), Stripe payments, role-based
+                dashboards, 500+ listings, PDF invoices, and admin approval
+                system.
+              </p>
               <div class="proj-tech">
-                <span>Laravel</span><span>React JS</span><span>MySQL</span
-                ><span>REST API</span><span>Stripe</span>
+                <span>Laravel 12</span><span>PHP 8.2</span><span>MySQL</span
+                ><span>Stripe</span><span>Bootstrap</span><span>AJAX</span
+                ><span>REST API</span>
               </div>
             </div>
+            <span class="proj-number">01</span>
           </div>
 
+          <!-- Amr Booking -->
           <div class="project-card" data-category="Business">
             <div class="project-thumb">
               <span class="proj-cat">Booking</span>
@@ -564,552 +587,266 @@
                 loading="lazy"
               />
               <div class="project-overlay">
-                <a href="https://halls.amrtm.com.sa" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-                <a href="https://github.com/irshadsaeed/Amr-Booking-Plateform" class="proj-action"><i class="bi bi-github"></i></a>
+                <a
+                  href="https://halls.amrtm.com.sa"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed/Amr-Booking-Plateform"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
               </div>
             </div>
             <div class="project-body">
-              <h3>Amr Booking Platform</h3>
-              <p>Multi-category booking system for weddings, events, and venues with real-time availability scheduling.</p>
+              <span class="proj-live-badge">Live</span>
+              <h3>Amr — Venue Booking Platform</h3>
+              <p>
+                Multi-category booking for weddings, events & venues. Real-time
+                availability scheduling, payments, and admin management.
+              </p>
               <div class="proj-tech">
                 <span>Laravel</span><span>MySQL</span><span>JavaScript</span>
               </div>
             </div>
+            <span class="proj-number">02</span>
           </div>
 
+          <!-- ProposalCraft -->
           <div class="project-card" data-category="SaaS">
             <div class="project-thumb">
               <span class="proj-cat">SaaS Platform</span>
-
               <img
                 src="images/projects/proposal-craft.png"
-                alt="ProposalCraft SaaS Platform"
+                alt="ProposalCraft"
                 loading="lazy"
               />
-
               <div class="project-overlay">
                 <a
                   href="https://github.com/irshadsaeed/Proposals-Craft-Pro"
                   class="proj-action"
                   target="_blank"
-                >
-                  <i class="bi bi-eye-fill"></i>
-                </a>
-
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
                 <a
                   href="https://github.com/irshadsaeed/Proposals-Craft-Pro"
                   class="proj-action"
                   target="_blank"
-                >
-                  <i class="bi bi-github"></i>
-                </a>
+                  ><i class="bi bi-github"></i
+                ></a>
               </div>
             </div>
-
             <div class="project-body">
-              <h3>ProposalCraft SaaS</h3>
-
+              <h3>ProposalCraft — SaaS Platform</h3>
               <p>
-                A modern SaaS platform designed for freelancers and agencies to
-                create, manage, and send professional client proposals with a
-                clean workflow and powerful dashboard.
+                Modern SaaS for freelancers & agencies to create, manage, and
+                send professional proposals with dashboard, blog & contact
+                management.
               </p>
-
               <div class="proj-tech">
-                <span>Laravel</span>
-                <span>PHP</span>
-                <span>MySQL</span>
-                <span>Blade</span>
-                <span>REST API</span>
+                <span>Laravel 11</span><span>PHP 8.2</span><span>MySQL</span
+                ><span>Blade</span>
               </div>
             </div>
+            <span class="proj-number">03</span>
           </div>
 
-          <div class="project-card" data-category="SaaS">
+            <!-- Al-Tamr -->
+          <div class="project-card featured" data-category="Business">
             <div class="project-thumb">
-              <span class="proj-cat">SaaS Platform</span>
+              <span class="proj-cat">Export Platform</span>
               <img
-                src=""
-                alt="Nexora Social Media AI Agent"
+                src="images/projects/altmr.png"
+                alt="Al-Tamr"
                 loading="lazy"
               />
               <div class="project-overlay">
-                <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
+                <a
+                  href="https://al-tamr-dammam.vercel.app/"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="proj-live-badge">Live</span>
+              <h3>Al-Tamr — Premium Dates Export</h3>
+              <p>
+                B2B export platform for Saudi dates trading. Bilingual (EN/AR),
+                Firebase backend, Cloudinary media, admin CRM & CSV/PDF reports.
+              </p>
+              <div class="proj-tech">
+                <span>React 18</span><span>Firebase</span><span>Vite 5</span
+                ><span>Cloudinary</span>
+              </div>
+            </div>
+            <span class="proj-number">04</span>
+          </div>
+
+          <!-- Nexora AI -->
+          <div class="project-card" data-category="SaaS">
+            <div class="project-thumb">
+              <span class="proj-cat">AI SaaS</span>
+              <img
+                src="images/projects/nexora-ai-agent.png"
+                alt="Nexora AI Agent"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
                 <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
               </div>
             </div>
             <div class="project-body">
               <h3>Nexora — Social Media AI Agent</h3>
-              <p>AI-powered SaaS platform for automated social media content generation and scheduling.</p>
+              <p>
+                AI-powered SaaS for automated social media content generation,
+                scheduling & analytics. OpenAI integration with subscription
+                billing.
+              </p>
               <div class="proj-tech">
-                <span>Laravel</span><span>React JS</span><span>Next.js</span><span>OpenAI API</span>
+                <span>Laravel</span><span>React JS</span><span>Next.js</span
+                ><span>OpenAI API</span>
               </div>
             </div>
+            <span class="proj-number">05</span>
           </div>
 
-          
+          <!-- FEATURED: CoffeeOS SaaS -->
+          <div class="project-card " data-category="SaaS">
+            <div class="project-thumb">
+              <span class="proj-cat">Premium SaaS</span>
+              <img
+                src="images/projects/coffee-saas.png"
+                alt="CoffeeOS SaaS"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://coffee-shop-theta-two.vercel.app/en"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="proj-live-badge">Live</span>
+              <h3>CoffeeOS — Enterprise Coffee Shop SaaS</h3>
+              <p>
+                Multi-tenant SaaS for coffee chains. Trilingual (EN/AR), dark
+                mode, Stripe payments, WhatsApp ordering, analytics dashboard,
+                POS integration, and white-label architecture built for scale.
+              </p>
+              <div class="proj-tech">
+                <span>Next.js 15</span><span>TypeScript</span
+                ><span>Tailwind CSS</span><span>PostgreSQL</span
+                ><span>Prisma</span><span>Stripe</span><span>NextAuth</span
+                ><span>Framer Motion</span>
+              </div>
+            </div>
+            <span class="proj-number">06</span>
+          </div>
 
+          <!-- Lumara Hotel -->
           <div class="project-card" data-category="Business">
             <div class="project-thumb">
               <span class="proj-cat">Hospitality</span>
               <img
-                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80"
-                alt="Lomara Hotel Booking"
+                src="images/projects/lumara-hotel-booking.png"
+                alt="Lumara Hotel"
                 loading="lazy"
               />
               <div class="project-overlay">
-                <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+                <a
+                  href="https://github.com/irshadsaeed/Lumara-Hotel-Booking-Next-JS-Docker-"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed/Lumara-Hotel-Booking-Next-JS-Docker-"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
               </div>
             </div>
             <div class="project-body">
-              <h3>Lomara Hotel Booking Platform</h3>
-              <p>Full hotel booking system with room management, availability calendar, and online payments.</p>
+              <h3>Lumara Hotels & Resorts</h3>
+              <p>
+                Luxury hotel booking with real-time reservations, EN/AR
+                bilingual, dark mode, admin dashboard, Cloudinary, email alerts
+                & Docker deployment.
+              </p>
               <div class="proj-tech">
-                <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+                <span>Next.js 14</span><span>TypeScript</span
+                ><span>PostgreSQL</span><span>Docker</span><span>Redis</span>
               </div>
             </div>
+            <span class="proj-number">07</span>
           </div>
 
-          <div class="project-card" data-category="E-Commerce">
-            <div class="project-thumb">
-              <span class="proj-cat">Brew & Been Coffee </span>
-              <img
-                src="images/projects/cofee.png"
-                alt="Coffee Shop"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Brew & Been Coffee</h3>
-              <p>Full online store with product catalog, cart, checkout, and admin order management.</p>
-              <div class="proj-tech">
-                <span>Laravel</span><span>PHP</span><span>MySQL</span>
-              </div>
-            </div>
-          </div>
+          
 
+          <!-- NEXUS Dashboard -->
           <div class="project-card" data-category="Web App">
             <div class="project-thumb">
-              <span class="proj-cat">SaaS Platform</span>
+              <span class="proj-cat">Enterprise Dashboard</span>
               <img
-                src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=800&q=80"
-                alt="Coffee SaaS Platform"
+                src="images/projects/nexus-dashboard.png"
+                alt="NEXUS Dashboard"
                 loading="lazy"
               />
               <div class="project-overlay">
-                <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Coffee SaaS Platform</h3>
-              <p>Multi-tenant SaaS for coffee shop chains with POS integration, inventory, and sales reporting.</p>
-              <div class="proj-tech">
-                <span>Laravel</span><span>React JS</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="Web App">
-            <div class="project-thumb">
-              <span class="proj-cat">Dashboard</span>
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
-                alt="Nuxes Admin Dashboard"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Nuxes — Admin Dashboard UI</h3>
-              <p>Professional backend dashboard with analytics, data tables, charts, and role-based access.</p>
-              <div class="proj-tech">
-                <span>Laravel</span><span>Bootstrap</span><span>JavaScript</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="E-Commerce">
-            <div class="project-thumb">
-              <span class="proj-cat">E-Commerce</span>
-              <img
-                src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?w=800&q=80"
-                alt="Paint & Hardware Store"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Paint & Hardware Store</h3>
-              <p>eCommerce platform with product variants, bulk pricing, and delivery management.</p>
-              <div class="proj-tech">
-                <span>Laravel</span><span>MySQL</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="Business">
-            <div class="project-thumb">
-              <span class="proj-cat">Corporate</span>
-              <img
-                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80"
-                alt="Construction Company Platform"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Construction Company Platform</h3>
-              <p>Corporate website with project portfolio, client management, and quote requests.</p>
-              <div class="proj-tech">
-                <span>Laravel</span><span>PHP</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="Business">
-            <div class="project-thumb">
-              <span class="proj-cat">Agency</span>
-              <img
-                src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&q=80"
-                alt="Xynex Technology Platform"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Xynex Technology Platform</h3>
-              <p>Technology services platform with service listings, client onboarding, and support ticketing.</p>
-              <div class="proj-tech">
-                <span>Laravel</span><span>PHP</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="Business">
-            <div class="project-thumb">
-              <span class="proj-cat">Export</span>
-              <img
-                src="images/projects/altmr.png"
-                alt="Al-Tamr Dates Export"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Al-Tamr — Premium Dates Export</h3>
-              <p>B2B export and transport platform with bilingual support, Firebase backend, and admin CRM.</p>
-              <div class="proj-tech">
-                <span>React 18</span><span>Firebase</span><span>Vite</span><span>Cloudinary</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="Business">
-            <div class="project-thumb">
-              <span class="proj-cat">Restaurant</span>
-              <img
-                src="images/projects/cofee.png"
-                alt="Brew & Bean Coffee Shop"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"><i class="bi bi-eye-fill"></i></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Brew & Bean — Coffee Shop Website</h3>
-              <p>Bilingual coffee shop site with dark mode, animations, and a 95+ Lighthouse score.</p>
-              <div class="proj-tech">
-                <span>Next.js 14</span><span>TypeScript</span><span>Tailwind</span><span>Framer Motion</span>
-              </div>
-            </div>
-          </div>
-
-         
-
-          <div class="project-card" data-category="Integration">
-            <div class="project-thumb">
-              <span class="proj-cat">Integration</span>
-              <img
-                src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=800&q=80"
-                alt="Auto Google Address"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"
+                <a
+                  href="https://github.com/irshadsaeed/NEXUS-Dashboard-v1.0"
+                  class="proj-action"
+                  target="_blank"
                   ><i class="bi bi-eye-fill"></i
                 ></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+                <a
+                  href="https://github.com/irshadsaeed/NEXUS-Dashboard-v1.0"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
               </div>
             </div>
             <div class="project-body">
-              <h3>Auto Google Address</h3>
+              <h3>NEXUS UI — Enterprise Dashboard</h3>
               <p>
-                Google Places autocomplete for fast and accurate address entry.
+                Premium SaaS/CRM dashboard with AI insights, interactive charts,
+                analytics, role-based auth, dark/light mode, and zero build-tool
+                dependencies. Built with pure HTML/CSS/JS.
               </p>
               <div class="proj-tech">
-                <span>PHP</span><span>Symfony</span><span>jQuery</span
-                ><span>Google API</span><span>Prestashop</span>
+                <span>HTML5</span><span>CSS3</span><span>JavaScript ES6+</span
+                ><span>ApexCharts</span><span>Glassmorphism</span>
               </div>
             </div>
+            <span class="proj-number">08</span>
           </div>
 
-          <div class="project-card" data-category="Business">
-            <div class="project-thumb">
-              <span class="proj-cat">Security</span>
-              <img
-                src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&q=80"
-                alt="Ban IP Address"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"
-                  ><i class="bi bi-eye-fill"></i
-                ></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Ban IP Address Redirect</h3>
-              <p>
-                Automatically blocks suspicious IP addresses and redirects
-                users.
-              </p>
-              <div class="proj-tech">
-                <span>PHP</span><span>Symfony</span><span>OOP</span
-                ><span>MySQL</span><span>Prestashop</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="Integration">
-            <div class="project-thumb">
-              <span class="proj-cat">Integration</span>
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
-                alt="Google Sheets Connector"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"
-                  ><i class="bi bi-eye-fill"></i
-                ></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Google Sheets Connector</h3>
-              <p>
-                Sync application data directly with Google Sheets in real time.
-              </p>
-              <div class="proj-tech">
-                <span>PHP</span><span>Symfony</span
-                ><span>Google Sheets API</span><span>Prestashop</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="Business">
-            <div class="project-thumb">
-              <span class="proj-cat">Productivity</span>
-              <img
-                src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&q=80"
-                alt="Availability Scheduler"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"
-                  ><i class="bi bi-eye-fill"></i
-                ></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Availability Scheduler</h3>
-              <p>
-                Smart appointment scheduling connected with Google Calendar.
-              </p>
-              <div class="proj-tech">
-                <span>PHP</span><span>Symfony</span
-                ><span>Google Calendar API</span><span>Prestashop</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="E-Commerce">
-            <div class="project-thumb">
-              <span class="proj-cat">Inventory</span>
-              <img
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80"
-                alt="Stock Reservation"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"
-                  ><i class="bi bi-eye-fill"></i
-                ></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Stock Reservation</h3>
-              <p>Automatic product stock reservation with expiry logic.</p>
-              <div class="proj-tech">
-                <span>PHP</span><span>Symfony</span><span>MySQL</span
-                ><span>Prestashop</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="Business">
-            <div class="project-thumb">
-              <span class="proj-cat">Business</span>
-              <img
-                src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80"
-                alt="Advanced PDF Catalog"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"
-                  ><i class="bi bi-eye-fill"></i
-                ></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Advanced PDF Catalog</h3>
-              <p>
-                Automated generation of full PDF catalogs with custom templates.
-              </p>
-              <div class="proj-tech">
-                <span>PHP</span><span>Symfony</span><span>DomPDF</span
-                ><span>Prestashop</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="E-Commerce">
-            <div class="project-thumb">
-              <span class="proj-cat">E-Commerce</span>
-              <img
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
-                alt="Request a Quote"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"
-                  ><i class="bi bi-eye-fill"></i
-                ></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Request a Quote</h3>
-              <p>Custom quote system for businesses handling bulk orders.</p>
-              <div class="proj-tech">
-                <span>PHP</span><span>Symfony</span><span>AJAX</span
-                ><span>Prestashop</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="E-Commerce">
-            <div class="project-thumb">
-              <span class="proj-cat">Products</span>
-              <img
-                src="images/projects/max-and-match.png"
-                alt="Max & Match"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"
-                  ><i class="bi bi-eye-fill"></i
-                ></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Max & Match</h3>
-              <p>Dynamic product combination and conditional pricing engine.</p>
-              <div class="proj-tech">
-                <span>PHP</span><span>Symfony</span><span>MySQL</span
-                ><span>Prestashop</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="E-Commerce">
-            <div class="project-thumb">
-              <span class="proj-cat">E-Commerce</span>
-              <img
-                src="images/projects/hide-price.webp"
-                alt="Hide Price"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"
-                  ><i class="bi bi-eye-fill"></i
-                ></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Hide Price Module</h3>
-              <p>Hide prices for specific customer groups or products.</p>
-              <div class="proj-tech">
-                <span>PHP</span><span>Symfony</span><span>MySQL</span
-                ><span>Prestashop</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="Integration">
-            <div class="project-thumb">
-              <span class="proj-cat">Reviews</span>
-              <img
-                src="images/projects/google-reviews.png"
-                alt="Google Reviews"
-                loading="lazy"
-              />
-              <div class="project-overlay">
-                <a href="#" class="proj-action"
-                  ><i class="bi bi-eye-fill"></i
-                ></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3>Google Reviews Integration</h3>
-              <p>Displays real user reviews fetched from Google My Business.</p>
-              <div class="proj-tech">
-                <span>PHP</span><span>Symfony</span
-                ><span>Google Reviews API</span><span>Prestashop</span>
-              </div>
-            </div>
-          </div>
-
+          <!-- Bookify -->
           <div class="project-card" data-category="Web App">
             <div class="project-thumb">
               <span class="proj-cat">Web App</span>
@@ -1119,82 +856,311 @@
                 loading="lazy"
               />
               <div class="project-overlay">
-                <a href="#" class="proj-action"
+                <a
+                  href="https://bookify-pro-next-js.vercel.app/"
+                  class="proj-action"
+                  target="_blank"
                   ><i class="bi bi-eye-fill"></i
                 ></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
               </div>
             </div>
             <div class="project-body">
-              <h3>Bookify</h3>
+              <span class="proj-live-badge">Live</span>
+              <h3>Bookify — Appointment System</h3>
               <p>
-                Online booking platform with real-time availability management.
+                Universal booking platform with real-time availability, calendar
+                management, Stripe payments & multi-business support.
               </p>
               <div class="proj-tech">
                 <span>Laravel</span><span>React JS</span><span>Next.js</span
                 ><span>MySQL</span><span>Stripe</span>
               </div>
             </div>
+            <span class="proj-number">09</span>
           </div>
 
-          <div class="project-card" data-category="E-Commerce">
+          <!-- Fitness -->
+          <div class="project-card" data-category="Web App">
             <div class="project-thumb">
-              <span class="proj-cat">E-Commerce</span>
+              <span class="proj-cat">Fitness</span>
               <img
-                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80"
-                alt="Multiple E-Commerce Projects"
+                src="images/projects/fitness.png"
+                alt="Fitness Website"
                 loading="lazy"
               />
               <div class="project-overlay">
-                <a href="#" class="proj-action"
+                <a
+                  href="https://fitness-website-react-js.vercel.app/"
+                  class="proj-action"
+                  target="_blank"
                   ><i class="bi bi-eye-fill"></i
                 ></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
               </div>
             </div>
             <div class="project-body">
-              <h3>Multiple Online E-Commerce Sites</h3>
+              <span class="proj-live-badge">Live</span>
+              <h3>Fitness Website</h3>
               <p>
-                Developed and customized multiple e-commerce sites globally.
+                Modern responsive fitness platform with workout plans, service
+                showcase & animated UI components.
               </p>
               <div class="proj-tech">
-                <span>Laravel</span><span>React JS</span><span>Tailwind</span
-                ><span>MySQL</span><span>Stripe</span>
+                <span>React JS</span><span>JavaScript</span><span>CSS3</span>
               </div>
             </div>
+            <span class="proj-number">10</span>
           </div>
 
+          <!-- Brew & Bean -->
+          <div class="project-card featured" data-category="Business">
+            <div class="project-thumb">
+              <span class="proj-cat">Restaurant</span>
+              <img
+                src="images/projects/cofee.png"
+                alt="Brew & Bean"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://coffee-shop-theta-two.vercel.app/en"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="proj-live-badge">Live</span>
+              <h3>Brew & Bean — Coffee Shop Website</h3>
+              <p>
+                Bilingual (EN/AR) coffee shop with dark mode, Framer Motion
+                animations, and a 95+ Lighthouse performance score.
+              </p>
+              <div class="proj-tech">
+                <span>Next.js 14</span><span>TypeScript</span
+                ><span>Tailwind CSS</span><span>Framer Motion</span>
+              </div>
+            </div>
+            <span class="proj-number">11</span>
+          </div>
+
+          <!-- Clovera -->
           <div class="project-card" data-category="Business">
             <div class="project-thumb">
-              <span class="proj-cat">Agency</span>
+              <span class="proj-cat">Digital Agency</span>
               <img
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+                src="images/projects/clovera-digital-agency.png"
                 alt="Clovera Digital Agency"
                 loading="lazy"
               />
               <div class="project-overlay">
-                <a href="#" class="proj-action"
+                <a
+                  href="https://clevora-tech-solutions.netlify.app/"
+                  class="proj-action"
+                  target="_blank"
                   ><i class="bi bi-eye-fill"></i
                 ></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
               </div>
             </div>
             <div class="project-body">
-              <h3>Clovera Digital Agency</h3>
-              <p>Professional agency website offering digital services.</p>
+              <span class="proj-live-badge">Live</span>
+              <h3>Clovera Tech Solutions</h3>
+              <p>
+                Premium digital agency website with luxury UI, GSAP animations,
+                dark theme, portfolio showcase & contact forms.
+              </p>
               <div class="proj-tech">
-                <span>Laravel</span><span>React JS</span><span>Tailwind</span
-                ><span>MySQL</span><span>Stripe</span>
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span
+                ><span>Bootstrap 5</span><span>GSAP</span>
               </div>
             </div>
+            <span class="proj-number">12</span>
           </div>
 
-          <div class="project-card" data-category="Web App">
+          <!-- Wahjwatan -->
+          <div class="project-card" data-category="Business">
             <div class="project-thumb">
-              <span class="proj-cat">Healthcare</span>
+              <span class="proj-cat">Real Estate</span>
               <img
-                src="https://images.unsplash.com/photo-1615461066159-fea0960485d5?w=800&q=80"
-                alt="Blood Donation System"
+                src="images/projects/wahjwatan.png"
+                alt="Wahjwatan"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://wahjwatan.sa/"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="proj-live-badge">Live</span>
+              <h3>Wahjwatan — Saudi Real Estate</h3>
+              <p>
+                Saudi real estate platform with property listings, search
+                filters, bilingual support & client inquiry system.
+              </p>
+              <div class="proj-tech">
+                <span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+              </div>
+            </div>
+            <span class="proj-number">13</span>
+          </div>
+
+          <!-- Laravel Ecommerce -->
+          <div class="project-card" data-category="E-Commerce">
+            <div class="project-thumb">
+              <span class="proj-cat">E-Commerce</span>
+              <img
+                src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&q=80"
+                alt="Laravel Ecommerce"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/irshadsaeed/LaravelEcommerceProject"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed/LaravelEcommerceProject"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Laravel E-Commerce Platform</h3>
+              <p>
+                Full-featured store with product catalog, cart, checkout, order
+                management & admin dashboard.
+              </p>
+              <div class="proj-tech">
+                <span>Laravel</span><span>PHP</span><span>MySQL</span
+                ><span>Bootstrap</span>
+              </div>
+            </div>
+            <span class="proj-number">14</span>
+          </div>
+
+          <!-- PHP OOP Ecommerce -->
+          <div class="project-card" data-category="E-Commerce">
+            <div class="project-thumb">
+              <span class="proj-cat">E-Commerce</span>
+              <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80"
+                alt="PHP OOP Ecommerce"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/irshadsaeed/EcommerceProject_PHP_OOP"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed/EcommerceProject_PHP_OOP"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>PHP OOP E-Commerce Store</h3>
+              <p>
+                Object-oriented PHP store built from scratch with product
+                management, cart, and checkout system.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>OOP</span><span>MySQL</span
+                ><span>Bootstrap</span>
+              </div>
+            </div>
+            <span class="proj-number">15</span>
+          </div>
+
+          <!-- AL Saeed Hardware -->
+          <div class="project-card" data-category="E-Commerce">
+            <div class="project-thumb">
+              <span class="proj-cat">E-Commerce</span>
+              <img
+                src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?w=800&q=80"
+                alt="AL Saeed Hardware"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/irshadsaeed/AL-Saeed-Hardware-and-Paint-Store-Next.JS-"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed/AL-Saeed-Hardware-and-Paint-Store-Next.JS-"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>AL Saeed Hardware & Paint Store</h3>
+              <p>
+                Next.js eCommerce for paint & hardware with product variants,
+                bulk pricing, cart & checkout.
+              </p>
+              <div class="proj-tech">
+                <span>Next.js</span><span>TypeScript</span
+                ><span>Tailwind CSS</span>
+              </div>
+            </div>
+            <span class="proj-number">16</span>
+          </div>
+
+          <!-- Construction -->
+          <div class="project-card" data-category="Business">
+            <div class="project-thumb">
+              <span class="proj-cat">Corporate</span>
+              <span class="proj-live">Live</span>
+              <img
+                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80"
+                alt="Construction"
                 loading="lazy"
               />
               <div class="project-overlay">
@@ -1205,21 +1171,52 @@
               </div>
             </div>
             <div class="project-body">
-              <h3>Blood Donation System</h3>
-              <p>Platform connecting donors and recipients in real time.</p>
+              <h3>Construction Company Platform</h3>
+              <p>
+                Corporate website with project portfolio, client management,
+                quote requests & document management.
+              </p>
               <div class="proj-tech">
-                <span>PHP</span><span>OOP</span><span>MySQL</span
-                ><span>jQuery</span>
+                <span>Laravel</span><span>PHP</span><span>MySQL</span>
               </div>
             </div>
+            <span class="proj-number">17</span>
           </div>
 
+          <!-- Xynex -->
+          <div class="project-card" data-category="Business">
+            <div class="project-thumb">
+              <span class="proj-cat">Tech Agency</span>
+              <img
+                src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&q=80"
+                alt="Xynex"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Xynex Technology Platform</h3>
+              <p>
+                Technology services platform with service listings, client
+                onboarding & support ticketing system.
+              </p>
+              <div class="proj-tech"><span>Laravel</span><span>PHP</span></div>
+            </div>
+            <span class="proj-number">18</span>
+          </div>
+
+          <!-- Zakat -->
           <div class="project-card" data-category="Web App">
             <div class="project-thumb">
               <span class="proj-cat">Finance</span>
               <img
                 src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80"
-                alt="Zakat Management System"
+                alt="Zakat"
                 loading="lazy"
               />
               <div class="project-overlay">
@@ -1232,22 +1229,54 @@
             <div class="project-body">
               <h3>Zakat Management System</h3>
               <p>
-                Complete digital solution for Zakat calculation and
-                distribution.
+                Digital solution for Zakat calculation, distribution &
+                management with admin dashboard.
               </p>
               <div class="proj-tech">
                 <span>PHP</span><span>Laravel</span><span>MySQL</span
                 ><span>Bootstrap</span>
               </div>
             </div>
+            <span class="proj-number">19</span>
           </div>
 
+          <!-- Blood Donation -->
+          <div class="project-card" data-category="Web App">
+            <div class="project-thumb">
+              <span class="proj-cat">Healthcare</span>
+              <img
+                src="https://images.unsplash.com/photo-1615461066159-fea0960485d5?w=800&q=80"
+                alt="Blood Donation"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a href="#" class="proj-action"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Blood Donation System</h3>
+              <p>
+                Platform connecting blood donors and recipients in real time
+                with location-based matching.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>OOP</span><span>MySQL</span
+                ><span>jQuery</span>
+              </div>
+            </div>
+            <span class="proj-number">20</span>
+          </div>
+
+          <!-- Rental Management -->
           <div class="project-card" data-category="Marketplace">
             <div class="project-thumb">
               <span class="proj-cat">Property</span>
               <img
                 src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80"
-                alt="Rental Management System"
+                alt="Rental Management"
                 loading="lazy"
               />
               <div class="project-overlay">
@@ -1259,94 +1288,516 @@
             </div>
             <div class="project-body">
               <h3>Rental Management System</h3>
-              <p>Complete digital solution for property rental management.</p>
+              <p>
+                Complete digital solution for property rental management,
+                listings & tenant tracking.
+              </p>
               <div class="proj-tech">
                 <span>PHP</span><span>OOP</span><span>MySQL</span
                 ><span>Bootstrap</span>
               </div>
             </div>
+            <span class="proj-number">21</span>
           </div>
 
+          <!-- Farhad Portfolio -->
           <div class="project-card" data-category="Portfolio">
             <div class="project-thumb">
               <span class="proj-cat">Portfolio</span>
-
               <img
-                src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80"
-                alt="Developer CV Portfolio Website"
-                loading="lazy"
-              />
-
-              <div class="project-overlay">
-                <a
-                  href="https://irshad-portfolio-version-02.vercel.app/"
-                  class="proj-action"
-                  target="_blank"
-                >
-                  <i class="bi bi-eye-fill"></i>
-                </a>
-
-                <a
-                  href="https://github.com/irshadsaeed/"
-                  class="proj-action"
-                  target="_blank"
-                >
-                  <i class="bi bi-github"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="project-body">
-              <h3>Professional Portfolio Websites</h3>
-
-              <p>
-                Designed and developed multiple modern portfolio websites for
-                developers and professionals, featuring responsive layouts,
-                performance optimization, and clean UI to showcase skills,
-                projects, and experience.
-              </p>
-
-              <div class="proj-tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Bootstrap</span>
-                <span>laravel</span>
-                <span>ajax</span>
-                <span>JSON</span>
-                <span>PHP</span>
-                <span>OOP</span>
-                <span>MYSQL</span>
-                <span>Vercel</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card" data-category="Web App">
-            <div class="project-thumb">
-              <span class="proj-cat">Dashboard</span>
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
-                alt="Admin Dashboard"
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80"
+                alt="Farhad Portfolio"
                 loading="lazy"
               />
               <div class="project-overlay">
-                <a href="#" class="proj-action"
+                <a
+                  href="https://farhad-saeed-portfolio.vercel.app/"
+                  class="proj-action"
+                  target="_blank"
                   ><i class="bi bi-eye-fill"></i
                 ></a>
-                <a href="#" class="proj-action"><i class="bi bi-github"></i></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
               </div>
             </div>
             <div class="project-body">
-              <h3>Admin Dashboard</h3>
-              <p>Analytics & management dashboard with interactive charts.</p>
+              <span class="proj-live-badge">Live</span>
+              <h3>Farhad Saeed — Developer Portfolio</h3>
+              <p>
+                Clean, modern developer portfolio with responsive layout &
+                professional project showcase.
+              </p>
               <div class="proj-tech">
-                <span>React JS</span><span>Next.js</span><span>Laravel</span
-                ><span>MySQL</span>
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
               </div>
             </div>
+            <span class="proj-number">22</span>
+          </div>
+
+          <!-- Sajjad Portfolio -->
+          <div class="project-card" data-category="Portfolio">
+            <div class="project-thumb">
+              <span class="proj-cat">Portfolio</span>
+              <img
+                src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&q=80"
+                alt="Sajjad Portfolio"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://sajjad-ahmad-portfolio-next-js.vercel.app/"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="proj-live-badge">Live</span>
+              <h3>Sajjad Ahmad — Next.js Portfolio</h3>
+              <p>
+                Professional developer portfolio with smooth animations, dark
+                mode & clean modern UI.
+              </p>
+              <div class="proj-tech">
+                <span>Next.js</span><span>React JS</span
+                ><span>Tailwind CSS</span>
+              </div>
+            </div>
+            <span class="proj-number">23</span>
+          </div>
+
+          <!-- Irshad React Portfolio -->
+          <div class="project-card" data-category="Portfolio">
+            <div class="project-thumb">
+              <span class="proj-cat">Portfolio</span>
+              <img
+                src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80"
+                alt="Irshad React Portfolio"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://irshad-saeed-portfolio-react-js.vercel.app/"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="proj-live-badge">Live</span>
+              <h3>Irshad — React.js Portfolio v1</h3>
+              <p>
+                Personal developer portfolio with project showcase, skills
+                section & contact form.
+              </p>
+              <div class="proj-tech">
+                <span>React JS</span><span>JavaScript</span><span>CSS3</span>
+              </div>
+            </div>
+            <span class="proj-number">24</span>
+          </div>
+
+          <!-- ===== PRESTASHOP MODULES ===== -->
+
+          <!-- Auto Google Address -->
+          <div class="project-card" data-category="Prestashop Module">
+            <div class="project-thumb">
+              <span class="proj-cat">PrestaShop Module</span>
+              <img
+                src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=800&q=80"
+                alt="Auto Google Address"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://addify.store/product-category/prestashop-modules/"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed/Auto-Google-Address"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Addify — Auto Google Address</h3>
+              <p>
+                Official Addify module — Google Places autocomplete for fast,
+                accurate address entry at checkout.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span
+                ><span>Google Places API</span><span>PrestaShop</span>
+              </div>
+            </div>
+            <span class="proj-number">25</span>
+          </div>
+
+          <!-- Google Sheets Connector -->
+          <div class="project-card" data-category="Prestashop Module">
+            <div class="project-thumb">
+              <span class="proj-cat">PrestaShop Module</span>
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+                alt="Google Sheets Connector"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://addify.store/product-category/prestashop-modules/"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed/addifygooglesheetsconnector"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Addify — Google Sheets Connector</h3>
+              <p>
+                Official Addify module — syncs PrestaShop store data with Google
+                Sheets in real time.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span
+                ><span>Google Sheets API</span><span>PrestaShop</span>
+              </div>
+            </div>
+            <span class="proj-number">26</span>
+          </div>
+
+          <!-- Ban IP -->
+          <div class="project-card" data-category="Prestashop Module">
+            <div class="project-thumb">
+              <span class="proj-cat">PrestaShop Module</span>
+              <img
+                src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=800&q=80"
+                alt="Ban IP"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://addify.store/product-category/prestashop-modules/"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed/addifybanipaddressgeolocationredirect"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Addify — Ban IP & Geolocation Redirect</h3>
+              <p>
+                Official Addify module — blocks suspicious IPs and geo-redirects
+                users by country with whitelist support.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span><span>OOP</span
+                ><span>PrestaShop</span>
+              </div>
+            </div>
+            <span class="proj-number">27</span>
+          </div>
+
+          <!-- Availability Scheduler -->
+          <div class="project-card" data-category="Prestashop Module">
+            <div class="project-thumb">
+              <span class="proj-cat">PrestaShop Module</span>
+              <img
+                src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&q=80"
+                alt="Availability Scheduler"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://addify.store/product-category/prestashop-modules/"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed/Availability-Scheduler"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Addify — Availability Scheduler</h3>
+              <p>
+                Official Addify module — smart appointment scheduling with
+                Google Calendar sync.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span
+                ><span>Google Calendar API</span><span>PrestaShop</span>
+              </div>
+            </div>
+            <span class="proj-number">28</span>
+          </div>
+
+          <!-- Request a Quote -->
+          <div class="project-card" data-category="Prestashop Module">
+            <div class="project-thumb">
+              <span class="proj-cat">PrestaShop Module</span>
+              <img
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+                alt="Request a Quote"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://addify.store/product-category/prestashop-modules/"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed/RequestAQuote"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Addify — Request a Quote</h3>
+              <p>
+                Official Addify module — lets customers request custom quotes
+                for bulk or B2B orders directly from the store.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span><span>AJAX</span
+                ><span>PrestaShop</span>
+              </div>
+            </div>
+            <span class="proj-number">29</span>
+          </div>
+
+          <!-- Stock Reservation -->
+          <div class="project-card" data-category="Prestashop Module">
+            <div class="project-thumb">
+              <span class="proj-cat">PrestaShop Module</span>
+              <img
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80"
+                alt="Stock Reservation"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://addify.store/product-category/prestashop-modules/"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Addify — Stock Reservation</h3>
+              <p>
+                Automatic product stock reservation with expiry logic to prevent
+                overselling in busy stores.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span><span>MySQL</span
+                ><span>PrestaShop</span>
+              </div>
+            </div>
+            <span class="proj-number">30</span>
+          </div>
+
+          <!-- Advanced PDF Catalog -->
+          <div class="project-card" data-category="Prestashop Module">
+            <div class="project-thumb">
+              <span class="proj-cat">PrestaShop Module</span>
+              <img
+                src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80"
+                alt="PDF Catalog"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://addify.store/product-category/prestashop-modules/"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Addify — Advanced PDF Catalog</h3>
+              <p>
+                Official Addify module — automated PDF catalog generation with
+                custom templates & multi-language support.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span><span>DomPDF</span
+                ><span>PrestaShop</span>
+              </div>
+            </div>
+            <span class="proj-number">31</span>
+          </div>
+
+          <!-- Max & Match -->
+          <div class="project-card" data-category="Prestashop Module">
+            <div class="project-thumb">
+              <span class="proj-cat">PrestaShop Module</span>
+              <img
+                src="images/projects/max-and-match.png"
+                alt="Max & Match"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://addify.store/product-category/prestashop-modules/"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Addify — Max & Match</h3>
+              <p>
+                Dynamic product combination and conditional pricing engine for
+                complex PrestaShop store configurations.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span><span>MySQL</span
+                ><span>PrestaShop</span>
+              </div>
+            </div>
+            <span class="proj-number">32</span>
+          </div>
+
+          <!-- Hide Price -->
+          <div class="project-card" data-category="Prestashop Module">
+            <div class="project-thumb">
+              <span class="proj-cat">PrestaShop Module</span>
+              <img
+                src="images/projects/hide-price.webp"
+                alt="Hide Price"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://addify.store/product-category/prestashop-modules/"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Addify — Hide Price Module</h3>
+              <p>
+                Hide product prices for specific customer groups, login-gated
+                pricing & B2B quote-only workflows.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span><span>MySQL</span
+                ><span>PrestaShop</span>
+              </div>
+            </div>
+            <span class="proj-number">33</span>
+          </div>
+
+          <!-- Google Reviews -->
+          <div class="project-card" data-category="Prestashop Module">
+            <div class="project-thumb">
+              <span class="proj-cat">PrestaShop Module</span>
+              <img
+                src="images/projects/google-reviews.png"
+                alt="Google Reviews"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://addify.store/product-category/prestashop-modules/"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-eye-fill"></i
+                ></a>
+                <a
+                  href="https://github.com/irshadsaeed"
+                  class="proj-action"
+                  target="_blank"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Addify — Google Reviews Integration</h3>
+              <p>
+                Official Addify module — displays real user reviews fetched
+                directly from Google My Business.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span
+                ><span>Google Reviews API</span><span>PrestaShop</span>
+              </div>
+            </div>
+            <span class="proj-number">34</span>
           </div>
         </div>
+        <!-- /projects-grid -->
       </div>
     </section>
 
