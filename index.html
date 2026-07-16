@@ -19,6 +19,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#000000" />
   </head>
   <body>
     <!-- Custom Cursor -->
@@ -1170,8 +1172,9 @@
             <div class="project-body">
               <h3>Suliman Alzaid Trading Company</h3>
               <p>
-  Professional construction & contracting platform with project management, client portals & quotation requests.
-</p>
+                Professional construction & contracting platform with project
+                management, client portals & quotation requests.
+              </p>
               <div class="proj-tech">
                 <span>Laravel</span><span>PHP</span><span>MySQL</span>
               </div>
@@ -1183,11 +1186,7 @@
           <div class="project-card" data-category="Business">
             <div class="project-thumb">
               <span class="proj-cat">Tech Agency</span>
-              <img
-                src="images/projects/xynex.png"
-                alt="Xynex"
-                loading="lazy"
-              />
+              <img src="images/projects/xynex.png" alt="Xynex" loading="lazy" />
               <div class="project-overlay">
                 <a href="#" class="proj-action"
                   ><i class="bi bi-eye-fill"></i
@@ -1210,11 +1209,7 @@
           <div class="project-card" data-category="Web App">
             <div class="project-thumb">
               <span class="proj-cat">Finance</span>
-              <img
-                src="images/projects/zakat.png"
-                alt="Zakat"
-                loading="lazy"
-              />
+              <img src="images/projects/zakat.png" alt="Zakat" loading="lazy" />
               <div class="project-overlay">
                 <a href="#" class="proj-action"
                   ><i class="bi bi-eye-fill"></i
@@ -1552,15 +1547,17 @@
               </div>
             </div>
             <div class="project-body">
-  <h3>Addify — Product Availability Scheduler</h3>
-  <p>
-     optimize product availability with smart scheduling,
-    customizable countdown timers, and dynamic stock availability messaging.
-  </p>
-  <div class="proj-tech">
-    <span>PHP</span><span>Symfony</span><span>PrestaShop</span><span>JavaScript</span>
-  </div>
-</div>
+              <h3>Addify — Product Availability Scheduler</h3>
+              <p>
+                optimize product availability with smart scheduling,
+                customizable countdown timers, and dynamic stock availability
+                messaging.
+              </p>
+              <div class="proj-tech">
+                <span>PHP</span><span>Symfony</span><span>PrestaShop</span
+                ><span>JavaScript</span>
+              </div>
+            </div>
             <span class="proj-number">28</span>
           </div>
 
@@ -1791,7 +1788,7 @@
             </div>
             <span class="proj-number">34</span>
           </div>
-          
+
           <!-- Account page customizer -->
           <div class="project-card" data-category="Prestashop Module">
             <div class="project-thumb">
@@ -1819,11 +1816,12 @@
             <div class="project-body">
               <h3>Addify — Account Page Customizer</h3>
               <p>
-  Official Addify module — Customize the customer account page with stunning layouts, enhanced user experience, and three unique design styles.
-</p>
+                Official Addify module — Customize the customer account page
+                with stunning layouts, enhanced user experience, and three
+                unique design styles.
+              </p>
               <div class="proj-tech">
-                <span>PHP</span><span>Symfony</span
-                ><span>PrestaShop</span>
+                <span>PHP</span><span>Symfony</span><span>PrestaShop</span>
               </div>
             </div>
             <span class="proj-number">35</span>
@@ -2062,5 +2060,10 @@
     </button>
 
     <script src="js/portfolio.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
   </body>
 </html>
